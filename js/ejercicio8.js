@@ -1,35 +1,33 @@
-// ejercicio de logica de departamentos 
+// ejercicio de logica de departamentos
 /**Ingresar un departamento (Cundinamarca, quindio, antioquia, valle)
  * alert("opcion no valida") si ingresa departamento que no sea alguno de esos 4
  * Dependiendo de que departamento es el seleccionado  debe mostrar cual es la capital de dicho departamento
- * 
- */
-let depto = prompt("Ingrese el departamento")
-let capiCundi = "bogota"
-let capiQuind = "armenia"
-let capiAntio = "medellin"
-let capiValle = "cali"
+ **/
 
-if (depto === null || depto === "") {
-    alert("No has ingresado Informacion")
+let departamento = prompt("Ingrese el departamento");
+
+if (departamento=== null || departamento=== "") {
+    alert("No has Ingresado datos")
+    
 } else {
-    depto = depto.toLocaleLowerCase()
-    if (
-    depto === "cundinamarca"
-    ) {
-        alert( " La capital de cundinamarca es :" + capiCundi)
+    departamento=departamento.toLocaleLowerCase()
+    if (departamento==="cundinamarca") {
+        alert("Bogotá")
+        
     } else {
-        if (depto === "quindio" || depto === "quindío") {
-            alert( " La capital de Quindio es :" + capiQuind)
+        if (departamento==="quindio" || departamento==="quindío") {
+            alert("Armenia")
+            
         } else {
-            if (depto === "antioquia") 
-            {
-                alert( " La capital de antioquia es :" + capiAntio)  
+            if (departamento==="antioquia") {
+                alert("Medellín")
+                
             } else {
-                if (depto === "valle") {
-                    alert( " La capital del valle es :" + capiValle)  
+                if (departamento==="valle") {
+                    alert("Cali")
+                    
                 } else {
-                    alert("Información invalida")
+                    alert("Opción no Valida")
                 }
             }
         }

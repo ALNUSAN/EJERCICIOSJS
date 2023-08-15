@@ -1,94 +1,95 @@
 /**
- * 1. 
+ * 1.
  * Ingresar un departamento ( cundinamarca , quindio, antioquia , valle)
  * Si no se ingresa alguno de ellos debe salir alert de opción invalida
- * 
- * 2. 
+ *
+ * 2.
  * Ingresar un departamento ( cundinamarca , quindio, antioquia , valle)
  * Ingresar objetivo de la visita ( turismo , comidas, museos )
- * Dependiendo de la opción que elija mostrar un alert con las comidas mas populares del departamento si escoje comidas, si escoje turismo debe mostrar las zonas turisticas del departamento, si selecciona museos debe sugeriri los museos del deparamento 
- * Mostrar alert de opcion no valida en caso que no se ingrese alguna de las opciones 
- * 
+ * Dependiendo de la opción que elija mostrar un alert con las comidas mas populares del departamento si escoje comidas, si escoje turismo debe mostrar las zonas turisticas del departamento, si selecciona museos debe sugeriri los museos del deparamento
+ * Mostrar alert de opcion no valida en caso que no se ingrese alguna de las opciones
+ *
  */
 
 /**
  * Y COMENZAMOS !!!!
  */
-let department = prompt("Ingrese departamento");
-let reason = prompt("Motivo de visita");
+
+let departmento = prompt("Ingrese departamento");
+let motivo = prompt("Motivo de visita");
 
 if (
-  department === null ||
-  department === "" ||
-  reason === null ||
-  reason === ""
+  departmento === null ||
+  departmento === "" ||
+  motivo === null ||
+  motivo === ""
 ) {
   alert("Datos no validos");
 } else {
-  department = department.toLowerCase();
-  reason = reason.toLowerCase();
+  departmento = departmento.toLowerCase();
+  motivo = motivo.toLowerCase();
 
-  if (department === "antioquia" && reason === "turismo") {
-    alert("Visita el parque de los pies descalzos");
+  if (departmento === "antioquia" && motivo === "turismo") {
+    alert("Visita el parque de los pies descalzos.");
   } else {
-    if (department === "antioquia" && reason === "comida") {
-      alert("La comida típica de Antioquia es la bandeja paisa.");
+    if (departmento === "antioquia" && motivo === "comida") {
+      alert("Pide bandeja paisa.");
     } else {
-      if (department === "antioquia" && reason === "museos") {
+      if (departmento === "antioquia" && motivo === "museos") {
         alert(
-          "Un museo para visitar en Antioquia es el museo de arte moderno."
+          "Visitar en Antioquia es el museo de arte moderno."
         );
       } else {
-        if (department === "cundinamarca" && reason === "turismo") {
+        if (departmento === "cundinamarca" && motivo === "turismo") {
           alert(
-            "Un sitio turístico en Cundinamarca son las Minas de sal de Nemocon."
+            "Visita las minas de sal de Nemocon."
           );
         } else {
-          if (department === "cundinamarca" && reason === "comida") {
-            alert("Una de las comidas tipicas es el Caldo de costilla");
+          if (departmento === "cundinamarca" && motivo === "comida") {
+            alert("Come caldo con costilla");
           } else {
-            if (department === "cundinamarca" && reason === "museos") {
+            if (departmento === "cundinamarca" && motivo === "museos") {
               alert(
-                "Uno de los mejores museos en Cundinamarca es el museo Nacional."
+                "Visita el museo nacional"
               );
             } else {
               if (
-                department === "quindio" ||
-                (department === "quindío" && reason === "turismo")
+                departmento === "quindio" ||
+                (departmento === "quindío" && motivo === "turismo")
               ) {
                 alert(
-                  "El mejor lugar a visitar es el  parque del cafe."
+                  "Visita el parque del café."
                 );
               } else {
                 if (
-                  department === "quindio" ||
-                  (department === "quindío" && reason === "comida")
+                  departmento === "quindio" ||
+                  (departmento === "quindío" && motivo === "comida")
                 ) {
                   alert(
-                    "Un plato de esta region es el Sancocho."
+                    "Pide la sopa de mondongo."
                   );
                 } else {
                   if (
-                    department === "quindio" ||
-                    (department === "quindío" && reason === "museos")
+                    departmento === "quindio" ||
+                    (departmento === "quindío" && motivo === "museos")
                   ) {
                     alert(
-                      "Un lugar para visitar es Antiguedades Pijao"
+                      "Visita el museo del oro"
                     );
                   } else {
-                    if (department === "valle" && reason === "turismo") {
+                    if (departmento === "valle" && motivo === "turismo") {
                       alert(
-                        "Visita Basilica Menor señor de los Milagros."
+                        "Ve a chipichape."
                       );
                     } else {
-                      if (department === "valle" && reason === "comida") {
+                      if (departmento === "valle" && motivo === "comida") {
                         alert(
-                          "No olvides comer Chuleta valluna"
+                          "Come una chuleta valluna"
                         );
                       } else {
-                        if (department === "valle" && reason === "museos") {
+                        if (departmento === "valle" && motivo === "museos") {
                           alert(
-                            "Visita Museo Aereo Fenix"
+                            "Visita el museo arqueológico"
                           );
                         } else {
                           alert(
